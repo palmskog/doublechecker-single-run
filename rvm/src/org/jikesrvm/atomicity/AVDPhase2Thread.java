@@ -36,7 +36,7 @@ import org.vmmagic.unboxed.Word;
 @NonMoving
 public final class AVDPhase2Thread extends SystemThread {
 
-  private static final int cycleVerbosity = 0;
+  private static final int cycleVerbosity = 1;
   
   private static String nameOfPhase2Thread = "AVDPhase2Thread";
   /** Monitor to pass information about cycles detected */
