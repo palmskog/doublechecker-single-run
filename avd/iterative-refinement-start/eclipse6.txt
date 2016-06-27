@@ -1,0 +1,15 @@
+Ldacapo/eclipse/Main;.main ([Ljava/lang/String;)V:16(0)
+Lorg/eclipse/osgi/framework/eventmgr/EventManager$EventThread;.run ()V:287(0)
+Lorg/eclipse/jdt/internal/core/search/processing/JobManager;.run ()V:333(0)
+Lorg/eclipse/debug/internal/core/OutputStreamMonitor$1;.run ()V:0(0) 
+Lorg/eclipse/debug/internal/core/InputStreamMonitor$1;.run ()V:0(0)
+Lorg/eclipse/core/internal/jobs/Worker;.run ()V:0(0)
+Lorg/eclipse/osgi/framework/internal/core/PackageAdminImpl$1;.run ()V:0(0)
+Lorg/eclipse/debug/core/model/RuntimeProcess$ProcessMonitorThread;.run ()V:0(0)
+Lorg/eclipse/core/internal/runtime/PlatformActivator$1;.run ()V:0(0)
+Lorg/eclipse/jdt/internal/core/search/processing/JobManager;.run ()V:0(0)
+Lorg/eclipse/osgi/framework/internal/core/SystemBundle$1;.run ()V:0(0)
+Lorg/eclipse/core/internal/jobs/WorkerPool;.sleep (J)V:0(0)
+
+# AVD results
+

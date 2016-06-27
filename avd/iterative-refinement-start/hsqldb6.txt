@@ -1,0 +1,11 @@
+# Trivial
+Ldacapo/hsqldb/PseudoJDBCBench;.main ([Ljava/lang/String;)V:94(0)
+Ldacapo/hsqldb/HsqldbHarness;.iterate (Ljava/lang/String;)V:19(0)
+Ldacapo/hsqldb/HsqldbHarness;.postIteration (Ljava/lang/String;)V:23(0)
+Ldacapo/hsqldb/PseudoJDBCBench$ClientThread;.run ()V:901(0)
+Ldacapo/hsqldb/PseudoJDBCBench$MemoryWatcherThread;.join ()V:0(0)
+Ldacapo/hsqldb/PseudoJDBCBench$MemoryWatcherThread;.run ()V:0(0)
+Ldacapo/hsqldb/PseudoJDBCBench$MemoryWatcherThread;.start ()V:0(0)
+
+# AVD results
+

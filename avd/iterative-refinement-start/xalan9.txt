@@ -1,0 +1,5 @@
+# Trivial
+Lorg/dacapo/xalan/XSLTBench$XalanWorker;.run ()V:91(0)
+
+# AVD results
+

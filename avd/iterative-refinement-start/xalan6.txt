@@ -1,0 +1,7 @@
+# Xalan6
+
+# Trivial
+Ldacapo/xalan/XalanHarness$XalanWorker;.run ()V:80(0)
+
+# AVD results
+

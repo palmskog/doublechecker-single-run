@@ -1,0 +1,13 @@
+# Trivial
+Lorg/sunflow/core/LightServer$1;.run ()V:202(0)
+Lorg/sunflow/core/renderer/SimpleRenderer$BucketThread;.run ()V:57(0)
+Lorg/sunflow/core/renderer/ProgressiveRenderer$SmallBucketThread;.run ()V:78(0)
+Lorg/sunflow/core/renderer/BucketRenderer$BucketThread;.run ()V:178(0)
+
+# The following methods cause trouble if it is part of a Phase 1 cycle, since it has almost 98% read/write accesses, and
+# Phase 2 runs into memory issues if while processing these transactions
+Lorg/sunflow/core/renderer/BucketRenderer;.access$300 (Lorg/sunflow/core/renderer/BucketRenderer;Lorg/sunflow/core/Display;IIILorg/sunflow/core/IntersectionState;)V:24(0)
+Lorg/sunflow/core/renderer/BucketRenderer;.renderBucket (Lorg/sunflow/core/Display;IIILorg/sunflow/core/IntersectionState;)V:199(0)
+
+# AVD results
+

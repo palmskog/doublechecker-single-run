@@ -1,0 +1,10 @@
+# Lusearch9-fixed
+
+# Need to check for specifications, lusearch harness for example
+Lorg/dacapo/lusearch/Search;.main ([Ljava/lang/String;)V:77(0) 
+Lorg/dacapo/lusearch/Search$QueryThread;.run ()V:176(0)
+Lorg/dacapo/lusearch/Search$QueryThread;.start ()V:0(0)
+Lorg/dacapo/lusearch/Search$QueryProcessor;.run ()V:0(0)
+
+# AVD results
+
