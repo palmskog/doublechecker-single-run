@@ -42,7 +42,7 @@ Go the source directory and run:
 
     $ ant -Dhost.name=x86_64-linux -Dconfig.name=FastAdaptiveGenImmix -Dconfig.variant=AVDASDefault -Dconfig.config-class=org.jikesrvm.config.AVDASDefault
 
-EXECUTING THE PROJECT
+## EXECUTING THE PROJECT
 
 Before you can execute a project, you need to create a symlink in your $HOME
 directory for the project.
@@ -57,7 +57,6 @@ Examples:
 
 Run DoubleChecker single run with avrora:
 
-    $ cd ; ln -s ${RVMROOT} avdRvmRoot
     $ ${RvmRoot}/dist/FastAdaptiveGenImmix_AVDASDefault_x86_64-linux/rvm -X:vm:errorsFatal=true -X:vm:measureCompilation=true -X:vm:measureCompilationPhases=true -X:vm:benchmarkName=avrora9 -Xmx2400M -cp <path-to-dacapo-9.12-bach.jar> Harness -s small -c MMTkCallback -n 1 avrora
 
 Only GenImmix is currently supported for GC changes in DoubleChecker, while all
