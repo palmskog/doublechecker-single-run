@@ -1,3 +1,5 @@
+# DoubleChecker Single Run
+
 DoubleChecker: Efficient Sound and Precise Atomicity Checking
 
 Swarnendu Biswas, Jipeng Huang, Aritra Sengupta, and Michael Bond
@@ -7,7 +9,7 @@ April 2014
 This document gives a brief description of the project, code, and instructions
 to build, and execute the projects.
 
-OVERVIEW
+## OVERVIEW
 
 DoubleChecker is a novel sound and precise dynamic atomicity checker whose key
 insight lies in its use of two new cooperating dynamic analyses. Its imprecise
@@ -30,40 +32,41 @@ The following paper presents DoubleChecker in more detail:
 Swarnendu Biswas, Jipeng Huang, Aritra Sengupta, and Michael
 Bond. DoubleChecker: Efficient Sound and Precise Atomicity Checking. PLDI 2014.
 
-BUILDING THE PROJECT
+## BUILDING THE PROJECT
 
 Install `gcc-multilib` and `g++-multilib`. In Ubuntu:
-$ apt-get install gcc-multilib g++-multilib
+
+    $ apt-get install gcc-multilib g++-multilib
 
 Go the source directory and run:
 
-$ ant -Dhost.name=x86_64-linux -Dconfig.name=FastAdaptiveGenImmix -Dconfig.variant=AVDASDefault -Dconfig.config-class=org.jikesrvm.config.AVDASDefault
+    $ ant -Dhost.name=x86_64-linux -Dconfig.name=FastAdaptiveGenImmix -Dconfig.variant=AVDASDefault -Dconfig.config-class=org.jikesrvm.config.AVDASDefault
 
 EXECUTING THE PROJECT
 
 Before you can execute a project, you need to create a symlink in your $HOME
 directory for the project.
 
-$ cd ; ln -s ${RVMROOT} avdRvmRoot
+    $ cd ; ln -s ${RVMROOT} avdRvmRoot
 
 After building, you can run a configuration with this command:
 
-$ ${RVMROOT}/dist/rvm/${WHATEVER_PREFIX}_${CONFIG_NAME}_${WHATEVER_SUFFIX}/rvm [JVM arguments] [application arguments]
+    $ ${RVMROOT}/dist/rvm/${WHATEVER_PREFIX}_${CONFIG_NAME}_${WHATEVER_SUFFIX}/rvm [JVM arguments] [application arguments]
 
 Examples:
 
 Run DoubleChecker single run with avrora:
 
-$ cd ; ln -s ${RVMROOT} avdRvmRoot
-$ ${RvmRoot}/dist/FastAdaptiveGenImmix_AVDASDefault_x86_64-linux/rvm -X:vm:errorsFatal=true -X:vm:measureCompilation=true -X:vm:measureCompilationPhases=true -X:vm:benchmarkName=avrora9 -Xmx2400M -cp <path-to-dacapo-9.12-bach.jar> Harness -s small -c MMTkCallback -n 1 avrora
+    $ cd ; ln -s ${RVMROOT} avdRvmRoot
+    $ ${RvmRoot}/dist/FastAdaptiveGenImmix_AVDASDefault_x86_64-linux/rvm -X:vm:errorsFatal=true -X:vm:measureCompilation=true -X:vm:measureCompilationPhases=true -X:vm:benchmarkName=avrora9 -Xmx2400M -cp <path-to-dacapo-9.12-bach.jar> Harness -s small -c MMTkCallback -n 1 avrora
 
 Only GenImmix is currently supported for GC changes in DoubleChecker, while all
 collectors are supported for Velodrome. It is possible to support other
 collectors in DoubleChecker as well.
 
-BRIEF GUIDE TO THE SOURCE CODE
+## BRIEF GUIDE TO THE SOURCE CODE
 
-Our implementations build on Jikes RVM 3.1.3. You can use Eclipse to view and/or
+The implementation builds on Jikes RVM 3.1.3. You can use Eclipse to view and/or
 modify the source code. Please refer to the Jikes RVM resources on how to set up
 Jikes in Eclipse.
  
@@ -74,8 +77,8 @@ DoubleChecker. To search for Velodrome-related changes, search for the string
 
 Some key classes:
 
-AVDAnalysis
-AVDStateTransfers
-AVDLogger
-AVDBarriers
-AVDPhase2Thread
+* AVDAnalysis
+* AVDStateTransfers
+* AVDLogger
+* AVDBarriers
+* AVDPhase2Thread
